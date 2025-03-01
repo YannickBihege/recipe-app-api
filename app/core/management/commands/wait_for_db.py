@@ -10,12 +10,10 @@ from django.core.management.base import BaseCommand
 
 class Command(BaseCommand):
     """Django commad to wait for database"""
-
     def handle(self, *args, **options):
         pass
         self.stdout.write('Waiting for the database')
-        db_up  = False
-
+        db_up = False
         while db_up is False:
             try:
                 self.check(databases= ['default'])
