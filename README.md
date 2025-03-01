@@ -109,7 +109,8 @@ docker-compose exec app flake8
 
 The application uses GitHub Actions for automated deployment. The workflow includes:
 
-1. Code Quality Check
+1. Code Quality Check ![image](https://github.com/user-attachments/assets/111f2c84-bb27-4c27-a721-eb896dfd20b5)
+
 2. Unit Tests
 3. Build and Push Docker Image
 4. Deploy to Production
